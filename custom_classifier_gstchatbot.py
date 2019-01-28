@@ -62,17 +62,19 @@ for i in range(len(keys)):
 
 
 
-# Splitting the dataset into the Training set and Test set
-from sklearn.cross_validation import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
-# Fitting Naive Bayes to the Training set
-from sklearn.naive_bayes import MultinomialNB
-classifier = MultinomialNB()
-classifier.fit(X_train, y_train)
-# Making the Confusion Matrix
-from sklearn.metrics import confusion_matrix
-y_pred = classifier.predict(X_test)
-cm = confusion_matrix(y_test, y_pred)
+# # Splitting the dataset into the Training set and Test set
+# from sklearn.cross_validation import train_test_split
+# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+# # Fitting Naive Bayes to the Training set
+# from sklearn.naive_bayes import MultinomialNB
+# classifier = MultinomialNB()
+# classifier.fit(X_train, y_train)
+# # Making the Confusion Matrix
+# from sklearn.metrics import confusion_matrix
+# y_pred = classifier.predict(X_test)
+# cm = confusion_matrix(y_test, y_pred)
+
+
 # Predicting the Test set results
 while(True):
     x_test = input("Enter your question: ")
